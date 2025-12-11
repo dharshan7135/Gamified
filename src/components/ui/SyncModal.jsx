@@ -45,17 +45,31 @@ export function SyncModal({ isOpen, onClose }) {
 
                     {status === 'idle' && (
                         <div className="space-y-3">
-                            <button onClick={handleSync} className="w-full p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-white/5 flex items-center justify-between transition-colors">
+                            <button onClick={handleSync} className="w-full p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-white/5 flex items-center justify-between transition-colors group">
                                 <div className="flex items-center">
-                                    <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">C</div>
-                                    <span>Chase Bank</span>
+                                    <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold text-white text-xs">SB</div>
+                                    <span className="text-white group-hover:text-cyan-400 transition-colors">State Bank of India</span>
                                 </div>
-                                <span className="text-xs text-green-400">Active</span>
+                                <span className="text-xs text-green-400">Detected</span>
                             </button>
-                            <button onClick={handleSync} className="w-full p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-white/5 flex items-center justify-between transition-colors">
+                            <button onClick={handleSync} className="w-full p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-white/5 flex items-center justify-between transition-colors group">
                                 <div className="flex items-center">
-                                    <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center mr-3 font-bold">W</div>
-                                    <span>Wells Fargo</span>
+                                    <div className="w-8 h-8 rounded-full bg-indigo-700 flex items-center justify-center mr-3 font-bold text-white text-xs">HD</div>
+                                    <span className="text-white group-hover:text-cyan-400 transition-colors">HDFC Bank</span>
+                                </div>
+                                <span className="text-xs text-slate-400">Connect</span>
+                            </button>
+                            <button onClick={handleSync} className="w-full p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-white/5 flex items-center justify-between transition-colors group">
+                                <div className="flex items-center">
+                                    <div className="w-8 h-8 rounded-full bg-orange-600 flex items-center justify-center mr-3 font-bold text-white text-xs">IC</div>
+                                    <span className="text-white group-hover:text-cyan-400 transition-colors">ICICI Bank</span>
+                                </div>
+                                <span className="text-xs text-slate-400">Connect</span>
+                            </button>
+                            <button onClick={handleSync} className="w-full p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-white/5 flex items-center justify-between transition-colors group">
+                                <div className="flex items-center">
+                                    <div className="w-8 h-8 rounded-full bg-rose-700 flex items-center justify-center mr-3 font-bold text-white text-xs">AX</div>
+                                    <span className="text-white group-hover:text-cyan-400 transition-colors">Axis Bank</span>
                                 </div>
                                 <span className="text-xs text-slate-400">Connect</span>
                             </button>
